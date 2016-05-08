@@ -1,0 +1,21 @@
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\bin\Debug\FailoverCompare.exe
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\bin\Debug\FailoverCompare.pdb
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\obj\Debug\FailoverCompare.csprojResolveAssemblyReference.cache
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\obj\Debug\MainWindow.baml
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\obj\Debug\MainWindow.g.cs
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\obj\Debug\App.g.cs
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\obj\Debug\FailoverCompare_MarkupCompile.cache
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\obj\Debug\FailoverCompare.g.resources
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\obj\Debug\FailoverCompare.Properties.Resources.resources
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\obj\Debug\FailoverCompare.csproj.GenerateResource.Cache
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\obj\Debug\FailoverCompare.exe
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\obj\Debug\FailoverCompare.pdb
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\bin\Debug\FSharp.Core.dll
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\bin\Debug\HtmlAgilityPack.dll
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\bin\Debug\ScrapySharp.Core.dll
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\bin\Debug\ScrapySharp.dll
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\bin\Debug\FSharp.Core.xml
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\nsaaiman\documents\visual studio 2013\Projects\FailoverCompare\FailoverCompare\bin\Debug\HtmlAgilityPack.xml
+C:\Users\nsaaiman\Documents\GitHub\FailoverCompare\FailoverCompare\obj\Debug\FailoverCompare.exe
+C:\Users\nsaaiman\Documents\GitHub\FailoverCompare\FailoverCompare\obj\Debug\FailoverCompare.pdb
