@@ -8,7 +8,7 @@ using ScrapySharp.Extensions;
 using System.Data;
 using System.Text.RegularExpressions;
 
-namespace FailoverCompare
+namespace VibeStatusCompare
 {
     internal class PageScrapper
     {
@@ -37,6 +37,7 @@ namespace FailoverCompare
             HtmlNode[] nodes = page.DocumentNode.CssSelect("table").ToArray();
 
             DataTable table = new DataTable();
+            
             TableBuilder(nodes, table);
             table.Columns.Add(new DataColumn("isError", typeof(bool)) { DefaultValue = false, ColumnName = "Error" });
             return table;
@@ -44,6 +45,8 @@ namespace FailoverCompare
 
 
         }
+
+        
         private static void TableBuilder(HtmlNode[] nodes, DataTable table)
         {
             for (int i = 0; i < nodes.Length; i++)

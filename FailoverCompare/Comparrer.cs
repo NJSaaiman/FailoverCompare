@@ -4,12 +4,35 @@ using System.Data;
 using System.Linq;
 using System.Text;
 
-namespace FailoverCompare
+namespace VibeStatusCompare
 {
     class Comparrer
     {
         public DataTable OriginalTable { get; set; }
         public DataTable TargetTable { get; set; }
+        private DataTable _messageTable;
+        public DataTable MessageTable
+        {
+            get
+            {
+                if (_messageTable == null)
+                {
+                    _messageTable = GetMessageTable();
+                }
+                return _messageTable;
+            }
+            set
+            {
+                _messageTable = value;
+            }
+        }
+        
+        private DataTable GetMessageTable()
+        {
+           DataTable messageTable = new DataTable();
+                    messageTable.Columns.Add("Message", typeof(string));
+            return messageTable;
+        }
 
         public void Compare()
         {
@@ -28,11 +51,13 @@ namespace FailoverCompare
                 {
                     tableA.Rows[i].SetField<bool>("Error", true);
                     AddErrorRowToTable(tableB, keyField, keyValue);
+                    AddMessageRow(keyValue + " was not found in target.");
                 }
                 else if (string.Compare(rowB.Field<string>(checkField), tableA.Rows[i].Field<string>(checkField)) != 0)
                 {
                     tableA.Rows[i].SetField<bool>("Error", true);
                     tableB.Rows[i].SetField<bool>("Error", true);
+                    AddMessageRow(keyValue + " was '" + tableA.Rows[i].Field<string>(checkField) + "' in source, target is now '" + rowB.Field<string>(checkField) + "'");
                 }
             }
 
@@ -46,6 +71,7 @@ namespace FailoverCompare
                 {
                     tableB.Rows[i].SetField<bool>("Error", true);
                     AddErrorRowToTable(tableA, keyField, keyValue);
+                    AddMessageRow(keyValue + " was not found in target.");
                 }
                 
             }
@@ -62,6 +88,15 @@ namespace FailoverCompare
             table.Rows.Add(newRow);
 
         }
+
+        private void AddMessageRow(string value)
+        {
+            DataRow newRow = MessageTable.NewRow();
+            newRow.SetField<string>("Message", value);
+            MessageTable.Rows.Add(newRow);
+
+        }
+
 
         public DataTable GetSortedOriginalTable()
         {

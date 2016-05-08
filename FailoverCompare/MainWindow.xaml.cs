@@ -12,7 +12,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace FailoverCompare
+namespace VibeStatusCompare
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -80,6 +80,7 @@ namespace FailoverCompare
 
             SourceDataGrid.ItemsSource = _tables.GetSortedOriginalTable().DefaultView;
             TargetDataGrid.ItemsSource = _tables.GetSortedTargetTable().DefaultView;
+            messageGrid.ItemsSource = _tables.MessageTable.DefaultView;
         }
 
       
