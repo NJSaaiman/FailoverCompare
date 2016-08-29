@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-E:\GIT\FailoverCompare\FailoverCompare\obj\Debug\
+E:\GIT\FailoverCompare\FailoverCompare\obj\Release\
 VibeStatusCompare
 none
 false
-DEBUG;TRACE
+TRACE
 E:\GIT\FailoverCompare\FailoverCompare\App.xaml
 11151548125
 
